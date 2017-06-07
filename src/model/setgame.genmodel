@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/set-game-emf/src" modelPluginID="set-game-emf"
+    modelName="Setgame" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>SetGame.ecore</foreignModel>
+  <genPackages prefix="Setgame" disposableProviderFactory="true" ecorePackage="SetGame.ecore#/">
+    <genClasses ecoreClass="SetGame.ecore#//Card">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SetGame.ecore#//Card/Color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SetGame.ecore#//Card/Form"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SetGame.ecore#//Card/Filling"/>
+    </genClasses>
+    <genClasses ecoreClass="SetGame.ecore#//Pack">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SetGame.ecore#//Pack/Cards"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

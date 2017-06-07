@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Setgame" nsURI="http://org/eclipse/example/SetGame" nsPrefix="setgmaemodelemf">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Setgame" nsURI="http://set-game-emf/SetGame" nsPrefix="set-game-emf">
   <eClassifiers xsi:type="ecore:EClass" name="Card">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Color" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEnumerator"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Form" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEnumerator"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Filling" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEnumerator"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Color" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEnumerator"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Form" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEnumerator"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Filling" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEnumerator"
+        transient="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Pack">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Cards" lowerBound="1" upperBound="81"
